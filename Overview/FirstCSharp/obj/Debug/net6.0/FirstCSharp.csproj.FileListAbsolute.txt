@@ -1,0 +1,15 @@
+C:\Users\Natha\OneDrive\Desktop\Code\Coding Dojo\Class\C#\Overview\FirstCSharp\bin\Debug\net6.0\FirstCSharp.exe
+C:\Users\Natha\OneDrive\Desktop\Code\Coding Dojo\Class\C#\Overview\FirstCSharp\bin\Debug\net6.0\FirstCSharp.deps.json
+C:\Users\Natha\OneDrive\Desktop\Code\Coding Dojo\Class\C#\Overview\FirstCSharp\bin\Debug\net6.0\FirstCSharp.runtimeconfig.json
+C:\Users\Natha\OneDrive\Desktop\Code\Coding Dojo\Class\C#\Overview\FirstCSharp\bin\Debug\net6.0\FirstCSharp.dll
+C:\Users\Natha\OneDrive\Desktop\Code\Coding Dojo\Class\C#\Overview\FirstCSharp\bin\Debug\net6.0\FirstCSharp.pdb
+C:\Users\Natha\OneDrive\Desktop\Code\Coding Dojo\Class\C#\Overview\FirstCSharp\obj\Debug\net6.0\FirstCSharp.csproj.AssemblyReference.cache
+C:\Users\Natha\OneDrive\Desktop\Code\Coding Dojo\Class\C#\Overview\FirstCSharp\obj\Debug\net6.0\FirstCSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Natha\OneDrive\Desktop\Code\Coding Dojo\Class\C#\Overview\FirstCSharp\obj\Debug\net6.0\FirstCSharp.AssemblyInfoInputs.cache
+C:\Users\Natha\OneDrive\Desktop\Code\Coding Dojo\Class\C#\Overview\FirstCSharp\obj\Debug\net6.0\FirstCSharp.AssemblyInfo.cs
+C:\Users\Natha\OneDrive\Desktop\Code\Coding Dojo\Class\C#\Overview\FirstCSharp\obj\Debug\net6.0\FirstCSharp.csproj.CoreCompileInputs.cache
+C:\Users\Natha\OneDrive\Desktop\Code\Coding Dojo\Class\C#\Overview\FirstCSharp\obj\Debug\net6.0\FirstCSharp.dll
+C:\Users\Natha\OneDrive\Desktop\Code\Coding Dojo\Class\C#\Overview\FirstCSharp\obj\Debug\net6.0\refint\FirstCSharp.dll
+C:\Users\Natha\OneDrive\Desktop\Code\Coding Dojo\Class\C#\Overview\FirstCSharp\obj\Debug\net6.0\FirstCSharp.pdb
+C:\Users\Natha\OneDrive\Desktop\Code\Coding Dojo\Class\C#\Overview\FirstCSharp\obj\Debug\net6.0\FirstCSharp.genruntimeconfig.cache
+C:\Users\Natha\OneDrive\Desktop\Code\Coding Dojo\Class\C#\Overview\FirstCSharp\obj\Debug\net6.0\ref\FirstCSharp.dll

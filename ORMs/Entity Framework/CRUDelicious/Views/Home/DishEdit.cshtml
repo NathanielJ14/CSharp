@@ -1,0 +1,41 @@
+@{
+    ViewData["Title"] = "Edit Page";
+}
+@model Dish
+
+<div>
+    <div class="text-center">
+    <h1 class="display-4">Edit a Dish!</h1>
+    <nav>
+        <a href="/">Home</a> 
+        |
+        <a href="Create">Add a Dish</a>
+    </nav>
+
+    <form asp-action="DishUpdate" asp-controller="Home" asp-route-dishId="@Model.DishId" method="post">
+        <label asp-for="Chef" >Chef's Name</label>
+        <input asp-for="Chef" class="form-control" value="@Model.Chef">
+        <span asp-validation-for="Chef"></span>
+
+        <label asp-for="Name" >Name of Dish</label>
+        <input asp-for="Name" class="form-control" value="@Model.Name">
+        <span asp-validation-for="Name"></span>
+
+        <label asp-for="Calories" ># of Calories</label>
+        <input asp-for="Calories" class="form-control" value="@Model.Calories">
+        <span asp-validation-for="Calories"></span>
+
+        <label asp-for="Tastiness" ></label>
+        <input asp-for="Tastiness" class="form-control" value="@Model.Tastiness">
+        <span asp-validation-for="Tastiness"></span>
+
+        <label asp-for="Description" ></label>
+        <textarea asp-for="Description" class="form-control" cols="30" rows="10" value="@Model.Description"></textarea>
+        <span asp-validation-for="Description"></span>
+
+        <button class="btn btn-primary button">Edit</button>
+    </form>
+
+
+</div>
+</div>

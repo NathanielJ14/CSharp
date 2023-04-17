@@ -1,0 +1,16 @@
+﻿a {
+  font-size: 30px;
+
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  margin: 50px auto;
+  align-items: center;
+}
+
+span {
+  font-size: 30px;
+}

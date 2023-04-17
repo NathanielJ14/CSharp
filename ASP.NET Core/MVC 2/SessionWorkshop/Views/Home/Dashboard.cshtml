@@ -1,0 +1,23 @@
+@{
+    ViewData["Title"] = "Dashboard Page";
+}
+
+<div>
+    <div class="top">
+        <h1>Welcome @Context.Session.GetString("Name")!</h1>
+
+        <form asp-action="Logout" asp-controller="Home" method="post">
+            <button class="btn btn-primary">Log Out</button>
+        </form>
+    </div>
+    
+    <h2 class="num">@Context.Session.GetInt32("Num")</h2>
+
+    <div>
+        <a class="btn btn-warning" href="addone">+ 1</a>
+        <a class="btn btn-danger" href="minone">- 1</a>
+        <a class="btn btn-primary" href="timestwo">x 2</a>
+        <a class="btn btn-success" href="addrandom">+ Random</a>
+    </div>
+</div>
+

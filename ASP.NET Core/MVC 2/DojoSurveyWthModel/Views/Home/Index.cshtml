@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model Info
+
+<div>
+    <form asp-action="FormCreate" asp-controller="Home" method="post">
+            <div class="row">
+                <label asp-for="Name"></label>
+                <input asp-for="Name" type="text" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+            <div class="row">
+                <label asp-for="Location"></label>
+                <select asp-for="Location" id="location" class="form-control">
+                    <option value="sanJose">San Jose</option>
+                    <option value="sacramento">Sacramento</option>
+                    <option value="scranton">Scranton</option>
+                    <option value="online">Online</option>
+                </select>
+                <span asp-validation-for="Location" class="text-danger"></span>
+            </div>
+
+            <div class="row">
+                <label asp-for="Langauge"></label>
+                <select asp-for="Langauge" id="langauge" class="form-control">
+                    <option value="javascript">Javascript</option>
+                    <option value="c#">C#</option>
+                    <option value="python">Python</option>
+                    <option value="c++">C++</option>
+                </select>
+                <span asp-validation-for="Langauge" class="text-danger"></span>
+            </div>
+
+
+            <div>
+                <label id="commentlabel" asp-for="Comment"></label>
+                <textarea id="comment" asp-for="Comment" class="form-control" rows="5" cols="43"></textarea>
+                <span asp-validation-for="Comment" class="text-danger"></span>
+            </div>
+
+            <button class="btn btn-success">Submit</button>
+        </form>
+</div>

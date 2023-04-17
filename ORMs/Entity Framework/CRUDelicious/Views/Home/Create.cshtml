@@ -1,0 +1,40 @@
+@{
+    ViewData["Title"] = "Create Page";
+}
+
+@model Dish
+
+<div class="text-center">
+    <h1 class="display-4">Add a new Dish!</h1>
+    <nav>
+        <a href="/">Home</a> 
+        |
+        <a href="Create">Add a Dish</a>
+    </nav>
+
+    <form asp-action="FormCreate" asp-controller="Home" method="post">
+        <label asp-for="Chef" >Chef's Name</label>
+        <input asp-for="Chef" class="form-control">
+        <span asp-validation-for="Chef"></span>
+
+        <label asp-for="Name" >Name of Dish</label>
+        <input asp-for="Name" class="form-control">
+        <span asp-validation-for="Name"></span>
+
+        <label asp-for="Calories" ># of Calories</label>
+        <input asp-for="Calories" class="form-control">
+        <span asp-validation-for="Calories"></span>
+
+        <label asp-for="Tastiness" ></label>
+        <input asp-for="Tastiness" class="form-control">
+        <span asp-validation-for="Tastiness"></span>
+
+        <label asp-for="Description" ></label>
+        <textarea asp-for="Description" class="form-control" cols="30" rows="10"></textarea>
+        <span asp-validation-for="Description"></span>
+
+        <button class="btn btn-primary button">Add</button>
+    </form>
+
+
+</div>

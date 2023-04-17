@@ -1,0 +1,11 @@
+﻿a {
+  font-size: 25px;
+  margin: 20px ;
+}
+
+nav {
+  display: flex;
+  margin: 20px auto;
+  width: 50%;
+  justify-content: space-around;
+}
