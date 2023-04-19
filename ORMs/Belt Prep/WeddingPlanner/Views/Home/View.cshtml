@@ -1,0 +1,27 @@
+@{
+    ViewData["Title"] = "View Page";
+}
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model MyViewModel
+
+
+<div class="mt-5 top">
+    <h1>Welcome @Model.User.FirstName </h1>
+    <a asp-controller="Home" asp-action="Dashboard" class="btn btn-dark">Home</a>
+    <a asp-controller="Home" asp-action="PlanWedding" class="btn btn-primary">Plan a Wedding</a>
+    <a href="/user/logout" class="btn btn-danger">Logout</a>
+</div>
+
+<div class="mt-5">
+        <h2 class="mb-3">@Model.Wedding.WedderOne & @Model.Wedding.WedderTwo</h2>
+        <p>Date: @Model.Wedding.Date</p>
+        <p>Guests: </p>
+        <ul>
+            @foreach (var guest in Model.AllGuest.Where(g => g.WeddingId == Model.Wedding.WeddingId))
+            {
+                <li>@guest.FirstName</li>
+            }
+
+        </ul>
+        
+    </div>

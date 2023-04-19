@@ -1,0 +1,52 @@
+@{
+    ViewData["Title"] = "Dashboard Page";
+}
+
+@model MyViewModel
+
+<div class="mt-5 top">
+    <h1>Welcome @Model.User.FirstName </h1>
+    <a href="Dashboard" class="btn btn-dark">Home</a>
+    <a href="PlanWedding" class="btn btn-primary">Plan a Wedding</a>
+    <a href="/user/logout" class="btn btn-danger">Logout</a>
+</div>
+
+<div>
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <th scope="col">Wedding of</th>
+            <th scope="col">Date</th>
+            <th scope="col">Guest Count</th>
+            <th scope="col">Action</th>
+        </thead>
+        <tbody>
+            @foreach (Wedding w in @Model.AllWeddings)
+            {
+                <tr>
+                    <td><a href="/wedding/@w.WeddingId/view">@w.WedderOne & @w.WedderTwo</a></td>
+                    <td>@w.Date.ToString("MMMM dd, yyyy")</td>
+                    <td>@w.AllGuests.Count</td>
+                    
+                    @if (w.UserId == @Model.User.UserId)
+                    {
+                        <td><a href="/wedding/@w.WeddingId/delete">Delete</a></td>
+                    } 
+                    else 
+                    {
+                        @if (!@w.AllGuests.Any(g => g.UserId == @Model.User.UserId && g.isRsvp == false))
+                        {
+                            <td><a href="/rsvp/@w.WeddingId/create">RSVP</a></td>
+                        }
+                        else 
+                        {
+                            <td><a href="/rsvp/@w.WeddingId/delete">Un-RSVP</a></td>
+                        }
+                        
+                    }
+                    
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>

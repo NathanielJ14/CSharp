@@ -1,0 +1,22 @@
+@model Wedding
+
+<form class="mt-3" asp-action="CreateWedding" asp-controller="Wedding" method="post">
+        <label asp-for="WedderOne" >Wedder One</label>
+        <input asp-for="WedderOne" class="form-control">
+        <span class="alert-danger d" asp-validation-for="WedderOne"></span>
+
+        <label asp-for="WedderTwo" >Wedder Two</label>
+        <input asp-for="WedderTwo" class="form-control">
+        <span class="alert-danger d" asp-validation-for="WedderTwo"></span>
+
+        <label asp-for="Date" >Date</label>
+        <input asp-for="Date" class="form-control">
+        <span class="alert-danger d" asp-validation-for="Date"></span>
+
+        <label asp-for="Address" >Address</label>
+        <input asp-for="Address" class="form-control">
+        <span class="alert-danger d" asp-validation-for="Address"></span>
+
+
+        <button class="mt-3 btn btn-success">Create</button>
+    </form>
